@@ -30,7 +30,7 @@ body {
 
 .container {
     max-width: 960px;
-    width: 100%;
+    width: 30%;
     margin: 0 auto;
     height: 100vh;
     display: flex;
@@ -39,11 +39,19 @@ body {
     
     @media @breakpointTablet {
         max-width: 80%;
+        width: 100%;
     }
 
     @media @breakpointMobile {
-        max-width: 70%;
+        max-width: 90%;
+        width: 90%;
     }
+}
+
+.box-container {
+    background-color: #colors[backgroundColorCard];
+    padding: 40px;
+    border-radius: 20px;
 }
 
 li {
@@ -64,18 +72,20 @@ header {
     text-align: center;
 
     &-name { //& -> se refere ao seletor "profile-bio" e o restante do nome (por ter o mesmo nome), só muda o restante
-        font-size: 16px;
+        font-size: 25px;
         .marginBottom8();
     }
 
     &-subtitle {
-        font-size: 14px;
+        font-size: 15px;
         .marginBottom8();
     }
 
     &-description { 
-        font-size: 14px;
-        opacity: 0.7;
+        font-size: 15px;
+        opacity: 0.8;
+        color: #colors[textColorDescription];
+        font-weight: bold;
     }
 }
 
