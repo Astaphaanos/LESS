@@ -1,0 +1,110 @@
+/*
+
+O que é o Less? 
+-> Compilador de CSS igual o SASS
+
+Qual as diferenças?
+Comentário -> //
+*/
+.marginBottom8 {
+  margin-bottom: 8px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #161616;
+  color: white;
+}
+.container {
+  max-width: 960px;
+  width: 30%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 90%;
+    width: 90%;
+  }
+}
+.box-container {
+  background-color: #2D2D2D;
+  padding: 40px;
+  border-radius: 20px;
+}
+li {
+  list-style: none;
+}
+header {
+  padding-bottom: 24px;
+}
+header .profile-picture {
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 100px;
+}
+.profile-bio {
+  text-align: center;
+}
+.profile-bio-name {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+.profile-bio-subtitle {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.profile-bio-description {
+  font-size: 15px;
+  opacity: 0.8;
+  color: #CCC202;
+  font-weight: bold;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.social-links li {
+  list-style: none;
+}
+.social-links li img {
+  transition: all ease 0.3s;
+}
+.social-links li img:hover {
+  transform: scale(1.2);
+}
+.projects-list {
+  margin-top: 32px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  display: block;
+  background-color: #F2BC57;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid #F2BC57;
+  transition: all ease 0.5s;
+}
+.projects-list-item a:hover {
+  color: #F2BC57;
+  background-color: transparent;
+}
